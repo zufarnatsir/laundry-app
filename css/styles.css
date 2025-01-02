@@ -1,0 +1,106 @@
+body {
+    background-color: hsl(0, 100%, 100%); 
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #252A34, #FF2E63); 
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 2em; /* Membuat teks lebih besar */
+    font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+.navbar-nav .nav-link {
+    color: #EEEEEE !important;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.5em; /* Membuat teks lebih besar */
+    font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+footer {
+    background: linear-gradient(to left, #252A34, #FF2E63); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    width: 80%; /* Mengatur lebar box */
+    margin: 0 auto; /* Mengatur box agar berada di tengah */
+    background-color: #EAEAEA; /* Mengatur warna latar box */
+    padding: 20px; /* Mengatur padding di dalam box */
+    border-radius: 5px; /* Mengatur sudut bulat box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada box */
+    animation: fadeIn 1s ease-in-out; /* Menambahkan animasi fade in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-nav .nav-link:hover {
+    color: #08D9D6 !important; 
+}
+
+.btn-custom {
+    background-color: #FF2E63; 
+    color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #08D9D6;
+    color: white;
+    transform: scale(1.05);
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table th {
+    background-color: #252A34; 
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(37, 42, 52, 0.1); 
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(8, 217, 214, 0.2); 
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #252A34; 
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert {
+    animation: fadeIn 1s ease-in-out;
+}
